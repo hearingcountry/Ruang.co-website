@@ -113,32 +113,32 @@ function Home() {
                 </Link>
               </div>
               <div className="" style={{ width: 350 }}>
-                <Link to="/browse/sukun">
+                <Link to="/browse/sukun-list">
                   <img src={require("../../assets/SliderImage/pict3.png")} className="d-block w-100" alt="..." />
                 </Link>
               </div>
               <div className="" style={{ width: 350 }}>
-                <Link to="/browse/lowokwaru">
+                <Link to="/browse/lowokwaru-list">
                   <img src={require("../../assets/SliderImage/pict1.png")} className="d-block w-100" alt="..." />
                 </Link>
               </div>
               <div className="" style={{ width: 350 }}>
-                <Link to="/browse/klojen">
+                <Link to="/browse/klojen-list">
                   <img src={require("../../assets/SliderImage/pict2.png")} className="d-block w-100" alt="..." />
                 </Link>
               </div>
               <div className="" style={{ width: 350 }}>
-                <Link to="/browse/sukun">
+                <Link to="/browse/sukun-list">
                   <img src={require("../../assets/SliderImage/pict3.png")} className="d-block w-100" alt="..." />
                 </Link>
               </div>
               <div className="" style={{ width: 350 }}>
-                <Link to="/browse/lowokwaru">
+                <Link to="/browse/lowokwaru-list">
                   <img src={require("../../assets/SliderImage/pict1.png")} className="d-block w-100" alt="..." />
                 </Link>
               </div>
               <div className="" style={{ width: 350 }}>
-                <Link to="/browse/klojen">
+                <Link to="/browse/klojen-list">
                   <img src={require("../../assets/SliderImage/pict2.png")} className="d-block w-100" alt="..." />
                 </Link>
               </div>

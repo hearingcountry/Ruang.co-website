@@ -1,5 +1,10 @@
 import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
+import {
+  Routes,
+  Route,
+  Link
+} from 'react-router-dom';
+
 import Home from './pages/Homepage/Home';
 import Browse from './pages/Browse/BrowsePage';
 
@@ -8,7 +13,6 @@ import BottomFooter from './components/BottomFooter';
 
 import SignIn from './pages/SignIn/Login';
 import Register from './pages/SignUp/Register';
-
 
 import LowokwaruList from './pages/Browse/CityList/Lowokwaru';
 import KlojenList from './pages/Browse/CityList/Klojen';
@@ -24,9 +28,10 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/browse" element={<Browse />} />
 
-        <Route path="/list/lowokwaru" element={<LowokwaruList />} />
-        <Route path="/list/klojen" element={<KlojenList />} />
-        <Route path="/list/sukun" element={<SukunList />} />
+        <Route path="/browse/lowokwaru" element={<LowokwaruList />} />
+        <Route path="/browse/klojen" element={<KlojenList />} />
+        <Route path="/browse/sukun" element={<SukunList />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <BottomFooter />
     </>

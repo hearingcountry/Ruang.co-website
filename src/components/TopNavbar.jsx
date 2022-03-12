@@ -46,10 +46,10 @@ function TopNavbar() {
               <Link className="nav-link" onMouseOver={hover} onMouseOut={hoverOut} to="/browse" style={AnchorLink}>Browse</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" onMouseOver={hover} onMouseOut={hoverOut} aria-current="page" to="/" style={AnchorLink}>About</Link>
+              <Link className="nav-link" onMouseOver={hover} onMouseOut={hoverOut} aria-current="page" to="/about" style={AnchorLink}>About</Link>
             </li>
             <li className="nav-item">
-              <a href="#about-us" className="nav-link" onMouseOver={hover} onMouseOut={hoverOut} style={AnchorLink}>Contact Us</a>
+              <Link className="nav-link" onMouseOver={hover} onMouseOut={hoverOut} to="/contact-us" style={AnchorLink}>Contact Us</Link>
             </li>
           </ul>
 

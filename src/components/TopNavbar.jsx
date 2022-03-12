@@ -1,15 +1,30 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavbarLogo from '../assets/LogoImages/Logo.png';
+import { Logo, AnchorLink, Button } from './NavbarStyles';
 
 function TopNavbar() {
+  function MouseOver(e) {
+    e.target.style.background = "#1976d2";
+  }
+
+  function MouseOut(event) {
+    event.target.style.background = "#736DEF";
+  }
+
+  const hover = e => {
+    e.target.style.color = "#736DEF"
+  };
+
+  const hoverOut = e => {
+    e.target.style.color = "#656565"
+  }
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img className="ms-5" src={NavbarLogo} alt="Ruang.co Logo" style={{
-            width: '104px', height: '28px'
-          }} />
+          <img className="ms-5" src={NavbarLogo} alt="Ruang.co Logo" style={Logo} />
         </Link>
         <button
           className="navbar-toggler"
@@ -25,88 +40,26 @@ function TopNavbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                aria-current="page"
-                to="/"
-                style={{
-                  color: '#656565',
-                  fontSize: '16px',
-                  fontWeight: '400',
-                  letterSpacing: '0.005em',
-                  "&:hover": {
-                    color: "#736def",
-                    fontWeight: '500'
-                  }
-                }}
-              >
-                Home
-              </Link>
+              <Link className="nav-link" onMouseOver={hover} onMouseOut={hoverOut} aria-current="page" to="/" style={AnchorLink}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="/browse"
-                style={{
-                  color: '#656565',
-                  fontSize: '16px',
-                  fontWeight: '400',
-                  letterSpacing: '0.005em',
-                  "&:hover": {
-                    color: "#736def",
-                    fontWeight: '500'
-                  }
-                }}
-              >
-                Browse
-              </Link>
+              <Link className="nav-link" onMouseOver={hover} onMouseOut={hoverOut} to="/browse" style={AnchorLink}>Browse</Link>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                aria-current="page"
-                to="/"
-                style={{
-                  color: '#656565',
-                  fontSize: '16px',
-                  fontWeight: '400',
-                  letterSpacing: '0.005em',
-                  "&:hover": {
-                    color: "#736def",
-                    fontWeight: '500'
-                  }
-                }}
-              >
-                About
-              </Link>
+              <Link className="nav-link" onMouseOver={hover} onMouseOut={hoverOut} aria-current="page" to="/" style={AnchorLink}>About</Link>
             </li>
             <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="/"
-                style={{
-                  color: '#656565',
-                  fontSize: '16px',
-                  fontWeight: '400',
-                  letterSpacing: '0.005em',
-                  "&:hover": {
-                    color: "#736def",
-                    fontWeight: '500'
-                  }
-                }}
-              >
-                Contact Us
-              </Link>
+              <Link className="nav-link" onMouseOver={hover} onMouseOut={hoverOut} to="/" style={AnchorLink}>Contact Us</Link>
             </li>
           </ul>
 
-          <div class="d-flex">
+          <div className="d-flex">
             <Link to="/register">
-              <button class="btn text-white px-4" type="button" style={{ background: "#736DEF" }}>Sign Up</button>
+              <button onMouseOver={MouseOver} onMouseOut={MouseOut} className="btn text-white px-4" type="button" style={Button}>Sign Up</button>
             </Link>
 
             <Link to="/login">
-              <button class="btn mx-3 text-white px-4" type="button" style={{ background: "#736def" }}>Log In</button>
+              <button onMouseOver={MouseOver} onMouseOut={MouseOut} className="btn mx-3 text-white px-4" type="button" style={Button}>Log In</button>
             </Link>
           </div>
         </div>

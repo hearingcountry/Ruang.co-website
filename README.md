@@ -10,7 +10,6 @@ console.log("Under Development");
 
 ## Tools and Dependencies ⚙
 <ul>
-  <li>Axios</li>
   <li>React JS</li>
   <li>Bootstrap</li>
   <li>React Icons</li>

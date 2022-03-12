@@ -37,9 +37,11 @@ npm run start
 
 ##
 <div align="left">
-  Product Manager : Mikha Sitepu
-  Product Design : Dicky Surya Nanda
-  Frontend Web Developer : Alfrenanda Yonathan Siregar
-  Backend Web Developer : -
+  <ul>
+    <li>Product Manager : Mikha Sitepu</li>
+    <li>Product Design : Dicky Surya Nanda</li>
+    <li>Frontend Web Developer : Alfrenanda Yonathan Siregar</li>
+    <li>Backend Web Developer : -</li>
+  </ul>
   &copy; 2022. All Rights Reserved.
 </div>

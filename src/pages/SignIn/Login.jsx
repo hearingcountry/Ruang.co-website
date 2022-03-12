@@ -38,6 +38,19 @@ const loginPageStyle = {
   marginBottom: '20em',
 };
 
+const labelStyle = {
+  fontWeight: '400',
+  fontSize: '16px',
+  letterSpacing: '0.005em',
+  color: '#656565',
+}
+
+const inputBox = {
+  background: '#fafafa',
+  border: "1px solid #bcbcd2",
+  borderRadius: "8px",
+}
+
 const Login = () => {
   return (
     <div className="" style={loginPageStyle}>
@@ -53,16 +66,18 @@ const Login = () => {
           <div className="col">
             <form>
               <div className="mb-3">
-                <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>
-                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" />
+                <label htmlFor="exampleInputEmail1" className="form-label" style={labelStyle}>Email address</label>
+                <input type="email" className="form-control" id="exampleInputEmail1"
+                  aria-describedby="emailHelp" placeholder="Email" style={inputBox} />
               </div>
               <div className="mb-3">
-                <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
+                <label htmlFor="exampleInputPassword1" className="form-label" style={labelStyle}>Password</label>
                 <input
                   type="password"
                   className="form-control"
                   id="exampleInputPassword1"
                   placeholder="Password"
+                  style={inputBox}
                 />
               </div>
               <button

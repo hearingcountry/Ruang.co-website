@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import Pict1 from '../../assets/HomeImages/unsplash.png';
 import Steps from '../../assets/HomeImages/Steps.png';
+import Gallery1 from '../../assets/HomeImages/gallery1.png';
+import Gallery2 from '../../assets/HomeImages/Gallery2.png';
+import Gallery3 from '../../assets/HomeImages/Gallery3.png';
+import Gallery4 from '../../assets/HomeImages/Gallery4.png';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -37,27 +41,23 @@ function Home() {
         <div className="row">
           <div className="col mt-5 ">
             <div className="row">
-              <p style={titleSection1}>Find The Best Place for Your Work</p>
+              <p className="" style={titleSection1}>Find The Best Place for Your Work</p>
             </div>
 
             <div className="row">
               <p style={descSection1} className="">We offer inspiring spaces with inviting design, flexible environment, and genuene experience</p>
             </div>
             <div className="row">
-              <form className="d-flex">
+              <div className="input-group d-flex">
                 <input
-                  className="form-control me-2"
-                  type="search"
+                  type="text"
+                  className="form-control w-50"
                   placeholder="Search City or Space"
                   aria-label="Search"
                   style={inputSearch}
                 />
-                <button
-                  className="btn btn-outline-success"
-                  type="submit"
-                  style={buttonSearch}
-                >Search</button>
-              </form>
+                <button className="btn" style={buttonSearch}>Search</button>
+              </div>
             </div>
           </div>
 
@@ -68,11 +68,12 @@ function Home() {
       </div>
 
       {/* Section 2 */}
-
-
+      <div id="section2">
+        <img src={require('../../assets/HomeImages/Section2.png')} alt="" className="img-fluid my-5 mx-auto d-block" />
+      </div>
 
       {/* Section 3 */}
-      <div className="pb-5" style={thirdSection}>
+      <div className="pb-5" style={thirdSection} id="section3">
         <p
           className="text-center pt-5 fw-normal"
           style={titleSection3}
@@ -94,34 +95,52 @@ function Home() {
             </div>
 
             <div className="ms-3">
-              <button className="btn text-center" style={exploreMoreBtn}>Explore More</button>
+              <Link to="/browse">
+                <button className="btn text-center" style={exploreMoreBtn}>Explore More</button>
+              </Link>
             </div>
           </div>
           <div className="col-md-6 mt-md-3 mt-5">
             <Slider {...settings}>
               <div className="" style={{ width: 350 }}>
-                <img src={require("../../assets/SliderImage/pict1.png")} className="d-block w-100" alt="..." />
+                <Link to="/browse/lowokwaru">
+                  <img src={require("../../assets/SliderImage/pict1.png")} className="d-block w-100" alt="..." />
+                </Link>
               </div>
               <div className="" style={{ width: 350 }}>
-                <img src={require("../../assets/SliderImage/pict2.png")} className="d-block w-100" alt="..." />
+                <Link to="/browse/klojen">
+                  <img src={require("../../assets/SliderImage/pict2.png")} className="d-block w-100" alt="..." />
+                </Link>
               </div>
               <div className="" style={{ width: 350 }}>
-                <img src={require("../../assets/SliderImage/pict3.png")} className="d-block w-100" alt="..." />
+                <Link to="/browse/sukun">
+                  <img src={require("../../assets/SliderImage/pict3.png")} className="d-block w-100" alt="..." />
+                </Link>
               </div>
               <div className="" style={{ width: 350 }}>
-                <img src={require("../../assets/SliderImage/pict1.png")} className="d-block w-100" alt="..." />
+                <Link to="/browse/lowokwaru">
+                  <img src={require("../../assets/SliderImage/pict1.png")} className="d-block w-100" alt="..." />
+                </Link>
               </div>
               <div className="" style={{ width: 350 }}>
-                <img src={require("../../assets/SliderImage/pict2.png")} className="d-block w-100" alt="..." />
+                <Link to="/browse/klojen">
+                  <img src={require("../../assets/SliderImage/pict2.png")} className="d-block w-100" alt="..." />
+                </Link>
               </div>
               <div className="" style={{ width: 350 }}>
-                <img src={require("../../assets/SliderImage/pict3.png")} className="d-block w-100" alt="..." />
+                <Link to="/browse/sukun">
+                  <img src={require("../../assets/SliderImage/pict3.png")} className="d-block w-100" alt="..." />
+                </Link>
               </div>
               <div className="" style={{ width: 350 }}>
-                <img src={require("../../assets/SliderImage/pict3.png")} className="d-block w-100" alt="..." />
+                <Link to="/browse/lowokwaru">
+                  <img src={require("../../assets/SliderImage/pict1.png")} className="d-block w-100" alt="..." />
+                </Link>
               </div>
               <div className="" style={{ width: 350 }}>
-                <img src={require("../../assets/SliderImage/pict3.png")} className="d-block w-100" alt="..." />
+                <Link to="/browse/klojen">
+                  <img src={require("../../assets/SliderImage/pict2.png")} className="d-block w-100" alt="..." />
+                </Link>
               </div>
             </Slider>
           </div>
@@ -136,7 +155,7 @@ function Home() {
 
         <div className="d-flex justify-content-center">
           <Link to="/register" className="text-decoration-none">
-            <button className="btn btn-default align-items-center" style={registerBtn}> Register </button>
+            <button className="btn btn-default align-items-center" style={registerBtn}>Register</button>
           </Link>
         </div>
       </div>

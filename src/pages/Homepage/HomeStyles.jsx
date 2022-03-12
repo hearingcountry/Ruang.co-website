@@ -3,7 +3,7 @@ export const titleSection1 = {
   color: '#333333',
   fontWeight: '500',
   fontSize: '64px',
-  letterSpacing: '0.005em'
+  letterSpacing: '0.005em',
 };
 
 export const descSection1 = {
@@ -17,13 +17,15 @@ export const inputSearch = {
   background: '#fff',
   border: '1px solid #c4c4c4c4',
   borderRadius: '5px',
+  padding: '1em'
 };
 
 export const buttonSearch = {
   background: '#736DEF',
   borderRadius: '0px 5px 5px 0px',
   color: '#fff',
-  fontWeight: '500'
+  fontWeight: '500',
+  border: '1px solid #736def',
 };
 
 export const pictSection1 = {

@@ -1,6 +1,6 @@
 # Ruang.co
 <div align="center">
-  <img src="https://github.com/yonathansiregar/Intern-BCC-2022/blob/master/src/assets/LogoIcon/Logo.png" alt="Ruang.co Logo"> 
+  <img src="https://github.com/yonathansiregar/Ruang.co-website/blob/master/src/assets/LogoImages/FooterLogo.png" alt="Ruang.co Logo"> 
 </div>
 
 #
@@ -11,16 +11,17 @@ console.log("Under Development");
 ## Tools and Dependencies ⚙
 <ul>
    <li>React JS</li>
-   <li>Material UI</li>
+   <li>Bootstrap</li>
    <li>React Icons</li>
    <li>React Router Dom</li>
-   <li>Styled Components</li>
+   <li>React Slick</li>
+   <li>Slick Carousel</li>
 </ul>
 
 ## How to Launch 🚀
 Clone this project :
 ```sh
-git clone https://github.com/yonathansiregar/Intern-BCC-2022.git
+git clone https://github.com/yonathansiregar/Ruang.co-website.git
 ```
 
 Install the dependencies :

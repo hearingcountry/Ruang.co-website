@@ -13,6 +13,7 @@ import BottomFooter from './components/BottomFooter';
 
 import SignIn from './pages/SignIn/Login';
 import Register from './pages/SignUp/Register';
+import NotFoundPage from './NotFound';
 
 import LowokwaruList from './pages/Browse/CityList/Lowokwaru';
 import KlojenList from './pages/Browse/CityList/Klojen';
@@ -28,25 +29,14 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/browse" element={<Browse />} />
 
-        <Route path="/browse/lowokwaru" element={<LowokwaruList />} />
-        <Route path="/browse/klojen" element={<KlojenList />} />
-        <Route path="/browse/sukun" element={<SukunList />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/browse/lowokwaru-list" element={<LowokwaruList />} />
+        <Route path="/browse/klojen-list" element={<KlojenList />} />
+        <Route path="/browse/sukun-list" element={<SukunList />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <BottomFooter />
     </>
   );
 }
-
-function NotFound() {
-  return (
-    <>
-      <h1>Nothing to see here!</h1>
-      <p>
-        <Link to="/">Go back to homepage</Link>
-      </p>
-    </>
-  );
-};
 
 export default App;

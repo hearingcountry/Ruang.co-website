@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Homepage/Home';
+import Browse from './pages/Browse/BrowsePage';
+
+import TopNavbar from './components/TopNavbar';
+import BottomFooter from './components/BottomFooter';
+
+import SignIn from './pages/SignIn/Login';
+import Register from './pages/SignUp/Register';
+
+
+import LowokwaruList from './pages/Browse/CityList/Lowokwaru';
+import KlojenList from './pages/Browse/CityList/Klojen';
+import SukunList from './pages/Browse/CityList/Sukun';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <TopNavbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<SignIn />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/browse" element={<Browse />} />
+
+        <Route path="/list/lowokwaru" element={<LowokwaruList />} />
+        <Route path="/list/klojen" element={<KlojenList />} />
+        <Route path="/list/sukun" element={<SukunList />} />
+      </Routes>
+      <BottomFooter />
+    </>
   );
 }
+
+function NotFound() {
+  return (
+    <>
+      <h1>Nothing to see here!</h1>
+      <p>
+        <Link to="/">Go back to homepage</Link>
+      </p>
+    </>
+  );
+};
 
 export default App;

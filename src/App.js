@@ -7,6 +7,8 @@ import {
 
 import Home from './pages/Homepage/Home';
 import Browse from './pages/Browse/BrowsePage';
+import About from './pages/AboutPage/About';
+import Contact from './pages/ContactPage/Contact';
 
 import TopNavbar from './components/TopNavbar';
 import BottomFooter from './components/BottomFooter';
@@ -27,6 +29,8 @@ function App() {
         <Route path="/login" element={<SignIn />} />
         <Route path="/register" element={<Register />} />
         <Route path="/browse" element={<Browse />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact-us" element={<Contact />} />
 
         <Route path="/browse/lowokwaru" element={<LowokwaruList />} />
         <Route path="/browse/klojen" element={<KlojenList />} />

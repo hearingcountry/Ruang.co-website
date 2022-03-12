@@ -1,4 +1,4 @@
-# Ruang.co
+# Ruang.co website
 <div align="center">
   <img src="https://github.com/yonathansiregar/Ruang.co-website/blob/master/src/assets/LogoImages/FooterLogo.png" alt="Ruang.co Logo"> 
 </div>
@@ -10,12 +10,13 @@ console.log("Under Development");
 
 ## Tools and Dependencies ⚙
 <ul>
-   <li>React JS</li>
-   <li>Bootstrap</li>
-   <li>React Icons</li>
-   <li>React Router Dom</li>
-   <li>React Slick</li>
-   <li>Slick Carousel</li>
+  <li>Axios</li>
+  <li>React JS</li>
+  <li>Bootstrap</li>
+  <li>React Icons</li>
+  <li>React Router Dom</li>
+  <li>React Slick</li>
+  <li>Slick Carousel</li>
 </ul>
 
 ## How to Launch 🚀
@@ -35,6 +36,10 @@ npm run start
 ```
 
 ##
-<div align="center">
-  Designed by Dicky Surya Nanda and developed by Alfrenanda Yonathan Siregar <br> 2022 <br> All Rights Reserved
+<div align="left">
+  Product Manager : Mikha Sitepu
+  Product Design : Dicky Surya Nanda
+  Frontend Web Developer : Alfrenanda Yonathan Siregar
+  Backend Web Developer : -
+  &copy; 2022. All Rights Reserved.
 </div>

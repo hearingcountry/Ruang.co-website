@@ -7,10 +7,6 @@ const titlePage = {
   letterSpacing: "0.005em",
 };
 
-const inputStyle = {
-  width: '25em',
-};
-
 const registerBtn = {
   backgroundColor: "#736def",
   borderRadius: "5px",
@@ -34,39 +30,53 @@ function Register() {
   return (
     <div className="my-5">
       <p className="text-center" style={titlePage}>Let's Start New Journey</p>
+      <form action="" className="mt-5">
+        <div className="row">
+          <div class="d-flex justify-content-center">
+            <div className="mb-3">
+              <div className="row">
+                <label htmlFor="" className="form-label">First Name</label>
+                <input type="text" className="form-control" required />
+              </div>
+            </div>
+          </div>
 
-      <form action="" className="mt-5 d-flex justify-content-center">
-        <div className="row mx-3 mx-sm-5 mx-md-5 mx-lg-5">
-          <div className="mb-3 d-flex justify-content-center">
-            <div className="row">
-              <label htmlFor="" className="form-label">First Name</label>
-              <input type="text" className="form-control" style={inputStyle} required />
+          <div class="d-flex justify-content-center">
+            <div className="mb-3">
+              <div className="row">
+                <label htmlFor="" className="form-label">Last Name</label>
+                <input type="text" className="form-control" required />
+              </div>
             </div>
           </div>
-          <div className="mb-3 d-flex justify-content-center">
-            <div className="row">
-              <label className="form-label">Last Name</label>
-              <input type="text" className="form-control" style={inputStyle} required />
+
+          <div class="d-flex justify-content-center">
+            <div className="mb-3">
+              <div className="row">
+                <label className="form-label">Email address</label>
+                <input type="email" className="form-control" />
+              </div>
             </div>
           </div>
-          <div className="mb-3 d-flex justify-content-center">
-            <div className="row">
-              <label className="form-label">Email address</label>
-              <input type="email" className="form-control" style={inputStyle} />
+
+          <div class="d-flex justify-content-center">
+            <div className="mb-3">
+              <div className="row">
+                <label className="form-label">Password</label>
+                <input type="password" className="form-control" required />
+              </div>
             </div>
           </div>
-          <div className="mb-3 d-flex justify-content-center">
-            <div className="row">
-              <label className="form-label">Password</label>
-              <input type="password" className="form-control" style={inputStyle} required />
+
+          <div class="d-flex justify-content-center">
+            <div className="mb-3">
+              <div className="row">
+                <label className="form-label">Confirm Password</label>
+                <input type="password" className="form-control" required />
+              </div>
             </div>
           </div>
-          <div className="mb-3 d-flex justify-content-center">
-            <div className="row">
-              <label className="form-label">Confirm Password</label>
-              <input type="password" className="form-control" style={inputStyle} required />
-            </div>
-          </div>
+
           <div class="d-grid gap-2 col-6 mx-auto my-3">
             <button class="btn" type="button" style={registerBtn}>Create Account</button>
           </div>
@@ -77,9 +87,6 @@ function Register() {
               <img className="p-1" alt="Google" src={require("../../assets/GoogleSignIn.png")} style={imageStyle} />
             </button>
           </div>
-          {/* <button type="submit" className="btn w-100 d-flex justify-content-center" style={googleBtnStyle}>
-            <img className="p-1" alt="Google" src={require("../../assets/GoogleSignIn.png")} style={imageStyle} />
-          </button> */}
         </div>
       </form>
     </div>

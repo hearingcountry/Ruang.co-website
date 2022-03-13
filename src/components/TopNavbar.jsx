@@ -49,7 +49,7 @@ function TopNavbar() {
               <Link className="nav-link" onMouseOver={hover} onMouseOut={hoverOut} aria-current="page" to="/" style={AnchorLink}>About</Link>
             </li>
             <li className="nav-item">
-              <a href="#about-us" onMouseOver={hover} onMouseOut={hoverOut} className="nav-link" style={AnchorLink}>About Us</a>
+              <a href="#contact-us" onMouseOver={hover} onMouseOut={hoverOut} className="nav-link" style={AnchorLink}>Contact Us</a>
             </li>
           </ul>
 

@@ -11,7 +11,7 @@ import {
 function BottomFooter() {
   return (
     <>
-      <footer className="pt-5 pb-4" style={Footer} id="about-us">
+      <footer className="pt-5 pb-4" style={Footer} id="contact-us">
         <div class="container pb-5">
           <div class="row">
             <div class="col-md-4">
